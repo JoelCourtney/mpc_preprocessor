@@ -1,0 +1,13 @@
+[package]
+name = "mpc_preprocessor"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap = { version = "4.6.1", features = ["derive"] }
+image = "0.25.10"
+
+# Rayon was already in the dependency tree so fuck it,
+# lets do it in parallel.
+rayon = "1.12.0"
+
